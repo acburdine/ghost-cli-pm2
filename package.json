@@ -1,6 +1,6 @@
 {
   "name": "ghost-cli-pm2",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ghost-CLI process manager that uses pm2 to run Ghost",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,7 +30,6 @@
   "devDependencies": {
     "eslint": "^4.1.1"
   },
-
   "ghost-cli": {
     "process-managers": {
       "pm2": "pm2.js"
