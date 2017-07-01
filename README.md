@@ -1,4 +1,5 @@
 # ghost-cli-pm2
+[![npm version](https://badge.fury.io/js/ghost-cli-pm2.svg)](https://badge.fury.io/js/ghost-cli-pm2)
 
 Ghost CLI process manager that uses pm2 to run Ghost
 
