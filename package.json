@@ -1,8 +1,7 @@
 {
   "name": "ghost-cli-pm2",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Ghost-CLI process manager that uses pm2 to run Ghost",
-  "main": "pm2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,12 +22,15 @@
   },
   "homepage": "https://github.com/acburdine/ghost-cli-pm2#readme",
   "dependencies": {
+    "bluebird": "^3.5.0",
+    "execa": "^0.7.0",
     "ghost-cli": "^1.0.0-beta.1",
     "pm2": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^4.1.1"
   },
+
   "ghost-cli": {
     "process-managers": {
       "pm2": "pm2.js"
