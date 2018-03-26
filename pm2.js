@@ -55,6 +55,30 @@ class PM2ProcessManager extends ProcessManager {
     });
   }
 
+  enable() {
+    // TODO: pm2.startup implementation
+    return Promise.resolve();
+  }
+
+  disable() {
+    return this._connect().then(() => {
+      return Promise.fromCallback((cb) => pm2.delete(this.instance.name, cb));
+    }).finally(() => {
+      pm2.disconnect();
+    });
+  }
+
+  isEnabled() {
+    return this._connect().then(() => {
+      return Promise.fromCallback((cb) => pm2.list(cb));
+    }).then((list) => {
+      const pm2Instance = list.find((l) => l.name === this.instance.name);
+      return Boolean(pm2Instance);
+    }).finally(() => {
+      pm2.disconnect();
+    });
+  }
+
   _connect() {
     return Promise.fromCallback((cb) => pm2.connect(cb));
   }
