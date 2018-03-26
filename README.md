@@ -21,5 +21,4 @@ ghost install --process pm2
 
 
 ### TODOS (order of importance):
-- Hook into `ghost uninstall` and remove ghost from pm2 instance list
 - Better support for additional pm2 options like cluster mode, instance count, etc.
