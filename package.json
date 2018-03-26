@@ -1,6 +1,6 @@
 {
   "name": "ghost-cli-pm2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ghost-CLI process manager that uses pm2 to run Ghost",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
