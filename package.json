@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Ghost-CLI process manager that uses pm2 to run Ghost",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -15,20 +16,20 @@
   "author": "Austin Burdine <acburdine@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "^4.5.0 || ^6.5.0"
+    "node": "^4.5.0 || ^6.9.0 || ^8.9.0"
   },
   "bugs": {
     "url": "https://github.com/acburdine/ghost-cli-pm2/issues"
   },
   "homepage": "https://github.com/acburdine/ghost-cli-pm2#readme",
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "execa": "^0.7.0",
-    "ghost-cli": "^1.0.0-beta.1",
-    "pm2": "^2.5.0"
+    "bluebird": "^3.5.1",
+    "ghost-cli": "^1.6.0",
+    "pm2": "^2.10.1"
   },
   "devDependencies": {
-    "eslint": "^4.1.1"
+    "eslint": "^4.19.1",
+    "standard-version": "^4.3.0"
   },
   "ghost-cli": {
     "process-managers": {
